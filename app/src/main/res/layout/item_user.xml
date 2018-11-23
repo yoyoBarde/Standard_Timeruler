@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_medium_row_size"
+        android:background="#FF5534"
+        android:gravity="center"
+        android:tag="Bottom3">
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:text="Delete"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_cell_one"
+        android:divider="?android:attr/dividerHorizontal">
+        <!--android:showDividers="middle"-->
+        <TextView
+            android:id="@+id/tvCell1"
+            style="@style/TableCellOneStyle"
+            android:layout_weight="@integer/lv_timein_column1"
+            android:gravity="center"
+            android:text="Header1" />
+
+        <TextView
+            android:id="@+id/tvCell2"
+            style="@style/TableCellOneStyle"
+            android:layout_weight="@integer/lv_timein_column2"
+            android:gravity="center"
+            android:text="Header2" />
+
+    </TableRow>
+
+</com.daimajia.swipe.SwipeLayout>

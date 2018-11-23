@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#ff456695</color>
+    <color name="primaryColorDark">#ff35426d</color>
+    <color name="accentColor">#04a8cf</color>
+    <color name="primaryTextColor">@color/white</color>
+    <color name="secondaryTextColor">@color/white</color>
+    <color name="windowBackground">#ffeff2f7</color>
+    <color name="app_nav">#ff364f73</color>
+
+    <color name="blue">#04a8cf</color>
+    <color name="green">#5cb547</color>
+    <color name="yellow">#e2e11b</color>
+    <color name="orange">#e0c716</color>
+    <color name="pink">#d51e85</color>
+    <color name="violet">#af3e96</color>
+    <color name="gray">#9c9c9c</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="errorMessageColor">@color/gray</color>
+
+    <!--TABLE-->
+    <color name="red_place_holder">#d94627</color>
+    <color name="table_divider">@color/black</color>
+    <color name="table_header_cell">#ffdfe6ee</color>
+    <color name="table_header_cell_text">#ff253c5a</color>
+    <color name="table_cell_one">#ffeff2f7</color>
+    <color name="table_cell_two">#fffefefe</color>
+    <color name="table_cell_one_text">#ff1a3758</color>
+    <color name="table_cell_two_text">#ff1a3758</color>
+    <color name="table_bg">#ffeff2f7</color>
+    <color name="black_alpha_80">#80000000</color>
+    <!--<color name="table_cell_one">#E0E0E0</color>-->
+
+    <color name="dialog_bkg">#ffe7eaf3</color>
+    <color name="dialog_btn_submit">#ff61b42e</color>
+    <color name="dialog_btn_cancel">#ffc3c3c3</color>
+    <color name="gps_time">#ffe7eaf3</color>
+
+    <!--TIME IN-->
+    <color name="time_in_btn_in">@color/green</color>
+    <color name="time_in_btn_out">@color/red</color>
+
+
+    <color name="view_all_logs_title_bg">#ffdfe6ee</color>
+    <color name="view_all_logs_title">#ff0c2d53</color>
+</resources>

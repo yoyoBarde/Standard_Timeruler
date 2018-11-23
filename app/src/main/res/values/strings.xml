@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Time Ruler</string>
+    <string name="title_fragment_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_camera_base">CameraBaseActivity</string>
+    <string name="title_activity_users">UsersActivity</string>
+    <string name="title_activity_view_all_logs">ViewAllLogsActivity</string>
+
+    <string name="gps_time_default">––– ––, –––– ––:––:–– ––</string>
+    <string name="dialog_title_add_user">Input Credentials</string>
+    <string name="dialog_title_sync">Confirmation</string>
+    <string name="title">Title</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="delete">DELETE</string>
+    <string name="close">CLOSE</string>
+    <string name="pin">PIN :</string>
+    <string name="pin_hint">Enter your pin here</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="date_default">––– ––, ––––</string>
+    <string name="time_default">––:––:–– ––</string>
+    <string name="sync">Sync</string>
+    <string name="filter">Filter</string>
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="search">Search</string>
+
+    <!--TimeIn-->
+    <string name="id">ID :</string>
+    <string name="name">Name :</string>
+    <string name="in">IN</string>
+    <string name="out">OUT</string>
+    <string name="details">Details</string>
+    <string name="time">Time :</string>
+    <string name="lat">Lat :</string>
+    <string name="longi">Long :</string>
+    <string name="address">Address :</string>
+    <string name="in_or_out">IN/OUT :</string>
+    <string name="dialog_title_time_in">Time In</string>
+    <string name="dialog_title_time_out">Time Out</string>
+    <string name="ok">OK</string>
+
+    <string name="welcome_to_payruler">Welcome To Payruler</string>
+    <string name="company_name">Company Name</string>
+    <string name="image">No\nImage</string>
+
+    <!--***************Preferences***************-->
+
+    <!--KEYS-->
+    <string name="pref_key_admin">pref_key_admin</string>
+    <string name="pref_key_system_time">pref_key_system_time</string>
+    <string name="pref_key_picture">pref_key_picture</string>
+    <string name="pref_key_lock_app">pref_key_lock_app</string>
+    <string name="pref_key_stay_awake">pref_key_stay_awake</string>
+    <string name="pref_key_view_all_users">pref_key_view_all_users</string>
+    <string name="pref_key_view_all_logs">pref_key_view_all_logs</string>
+    <string name="pref_key_sync">pref_key_sync</string>
+    <string name="pref_key_auto_sync_logs">pref_key_auto_sync_logs</string>
+    <string name="pref_key_user">pref_key_user</string>
+    <string name="pref_key_view_logs">pref_key_view_logs</string>
+
+    <!--TITLES-->
+    <string name="pref_title_admin">ADMIN</string>
+    <string name="pref_title_system_time">Use system time</string>
+    <string name="pref_title_take_photo">Take a photo</string>
+    <string name="pref_title_lock_app">Lock app in screen</string>
+    <string name="pref_title_stay_awake">Stay Awake</string>
+    <string name="pref_title_view_all_users">View all users</string>
+    <string name="pref_title_view_all_logs">View all logs</string>
+    <string name="pref_title_sync">SYNC</string>
+    <string name="pref_title_auto_sync_logs">Auto sync logs</string>
+    <string name="pref_title_user">USER</string>
+    <string name="pref_title_view_logs">View logs</string>
+
+    <!--SUMMARIES-->
+    <string name="pref_summary_admin">Ignores GPS nd network\'s location and time when enabled</string>
+    <string name="pref_summary_take_a_photo">Take\'s a photo when enabled</string>
+    <string name="title_activity_camera">CameraActivity</string>
+
+    <!--***************Preferences end***************-->
+
+    <string name="camera_not_found">No camera harware found</string>
+    <string name="take_photo_help">Touch anywhere on screen to take picture</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="title_activity_camera2">Camera2Activity</string>
+
+    <!--SYNC-->
+    <string name="sync_account_type">com.geniihut.payrulerattendance</string>
+    <string name="sync_user_service_label">Users</string>
+    <string name="sync_time_in_service_label">Attendance</string>
+    <string name="sync_user_content_authority">com.geniihut.payrulerattendance.user</string>
+    <string name="sync_time_in_content_authority">com.geniihut.payrulerattendance.timein</string>
+    <string name="company_ip">Company IP (Optional)</string>
+
+    <string name="service_not_available">Service Not Available</string>
+    <string name="invalid_lat_long_used">Invalid Coordinates</string>
+    <string name="no_address_found">No Address Found</string>
+    <string name="address_found">Address Found</string>
+    <string name="offline_mode">OFFLINE MODE</string>
+    <string name="offline_data">OFFLINE DATA</string>
+
+</resources>

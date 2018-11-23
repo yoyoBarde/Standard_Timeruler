@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.geniihut.payrulerattendance.camera.visionapi.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.geniihut.payrulerattendance.camera.visionapi.GraphicOverlay
+                android:id="@+id/faceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.geniihut.payrulerattendance.camera.visionapi.CameraSourcePreview>
+
+        <TextView
+            android:id="@+id/tvOfflinemode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OFFLINE MODE"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <com.geniihut.payrulerattendance.helpers.CustomDigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOfflinemode"
+            android:background="@color/black_alpha_80"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/black_alpha_80"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IN" />
+
+                <Button
+                    android:id="@+id/btnOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="OUT" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

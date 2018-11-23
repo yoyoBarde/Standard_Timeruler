@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="lv_timein_column1">1</integer>
+    <integer name="lv_timein_column2">3</integer>
+
+</resources>

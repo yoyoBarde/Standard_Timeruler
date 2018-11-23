@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/table_bg"
+    android:padding="@dimen/table_divider"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_header_cell"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tvHeader1"
+            style="@style/TableHeaderCellStyle"
+            android:layout_weight="@integer/lv_timein_column1"
+            android:gravity="center"
+            android:text="Header1" />
+
+        <TextView
+            android:id="@+id/tvHeader2"
+            style="@style/TableHeaderCellStyle"
+            android:layout_weight="@integer/lv_timein_column2"
+            android:gravity="center"
+            android:text="Header2" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="true" />
+</TableLayout>

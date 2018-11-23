@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/table_bg"
+    android:padding="@dimen/table_divider"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/table_header_cell"
+        android:divider="?android:attr/dividerHorizontal">
+        <!--android:showDividers="middle"-->
+        <TextView
+            android:id="@+id/tvHeader1"
+            style="@style/TableHeaderCellStyle"
+            android:text="Header1" />
+
+        <TextView
+            android:id="@+id/tvHeader2"
+            style="@style/TableHeaderCellStyle"
+            android:text="Header2" />
+
+        <TextView
+            android:id="@+id/tvHeader3"
+            style="@style/TableHeaderCellStyle"
+            android:text="Header3" />
+
+        <TextView
+            android:id="@+id/tvHeader4"
+            style="@style/TableHeaderCellStyle"
+            android:text="Header4" />
+
+        <TextView
+            android:id="@+id/tvHeader5"
+            style="@style/TableHeaderCellStyle"
+            android:text="Header5" />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:drawSelectorOnTop="true" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:visibility="visible" />-->
+
+        <TextView
+            android:id="@+id/tv_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/errorMessageColor"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/empty_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</TableLayout>

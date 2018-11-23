@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".HomeActivity">
+    <item android:id="@+id/action_sync" android:icon="@drawable/ic_synchronize"
+        android:title="@string/sync" android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_filter" android:icon="@drawable/ic_filter"
+        android:title="@string/filter" android:orderInCategory="100" app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/filter_all"
+                android:checked="true"
+                android:checkable="true"
+                android:title="ALL" />
+            <item
+                android:id="@+id/filter_in"
+                android:title="IN" />
+            <item
+                android:id="@+id/filter_out"
+                android:title="OUT"/>
+        </menu>
+    </item>
+    <item android:id="@+id/action_sort" android:icon="@drawable/ic_sort"
+        android:title="Sort Ascending" android:orderInCategory="100" app:showAsAction="always"/>
+</menu>

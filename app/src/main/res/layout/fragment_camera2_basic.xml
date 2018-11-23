@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.geniihut.payrulerattendance.camera.camera2.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/control" />
+
+
+    <RelativeLayout
+        android:id="@+id/control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="IN" />
+
+            <Button
+                android:id="@+id/btnOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="OUT" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@color/black"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/btnIn"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="@dimen/default_large_row_size"-->
+        <!--android:layout_marginLeft="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginRight="@dimen/default_drawable_padding"-->
+        <!--card_view:cardBackgroundColor="@color/time_in_btn_in"-->
+        <!--card_view:cardCornerRadius="6dp"-->
+        <!--card_view:cardElevation="1dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/in"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/cardview_textSize" />-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/btnOut"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="@dimen/default_large_row_size"-->
+        <!--android:layout_marginLeft="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginRight="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+        <!--card_view:cardBackgroundColor="@color/time_in_btn_out"-->
+        <!--card_view:cardCornerRadius="6dp"-->
+        <!--card_view:cardElevation="1dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/out"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/cardview_textSize" />-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+
+</RelativeLayout>

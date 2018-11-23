@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <com.geniihut.payrulerattendance.helpers.CustomDigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/black_alpha_80"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="IN" />
+
+            <Button
+                android:id="@+id/btnOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="OUT" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@color/black"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/btnIn"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="@dimen/default_large_row_size"-->
+        <!--android:layout_marginLeft="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginRight="@dimen/default_drawable_padding"-->
+        <!--card_view:cardBackgroundColor="@color/time_in_btn_in"-->
+        <!--card_view:cardCornerRadius="6dp"-->
+        <!--card_view:cardElevation="1dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/in"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/cardview_textSize" />-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/btnOut"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="@dimen/default_large_row_size"-->
+        <!--android:layout_marginLeft="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginRight="@dimen/default_drawable_padding"-->
+        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+        <!--card_view:cardBackgroundColor="@color/time_in_btn_out"-->
+        <!--card_view:cardCornerRadius="6dp"-->
+        <!--card_view:cardElevation="1dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/out"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/cardview_textSize" />-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>

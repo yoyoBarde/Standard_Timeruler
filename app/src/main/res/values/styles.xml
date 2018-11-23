@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="AppTheme.Base">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="MyCustomToolbarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="TableHeaderCellStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_small_row_size</item>
+        <item name="android:padding">@dimen/default_drawable_padding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/table_header_cell_text</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TableCellOneStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_medium_row_size</item>
+        <item name="android:padding">@dimen/default_drawable_padding</item>
+        <item name="android:textColor">@color/table_cell_one_text</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TableCellTwoStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_medium_row_size</item>
+        <item name="android:padding">@dimen/default_drawable_padding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/table_cell_two_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

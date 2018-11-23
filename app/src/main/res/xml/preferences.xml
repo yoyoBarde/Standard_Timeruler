@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="@string/pref_key_admin"
+        android:title="@string/pref_title_admin">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_system_time"
+            android:summary="@string/pref_summary_admin"
+            android:title="@string/pref_title_system_time" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_picture"
+            android:summary="@string/pref_summary_take_a_photo"
+            android:title="@string/pref_title_take_photo" />
+
+        <!--<CheckBoxPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:key="@string/pref_key_lock_app"-->
+            <!--android:title="@string/pref_title_lock_app" />-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:key="@string/pref_key_stay_awake"-->
+            <!--android:title="@string/pref_title_stay_awake" />-->
+
+        <Preference
+            android:key="@string/pref_key_view_all_users"
+            android:title="@string/pref_title_view_all_users"/>
+
+        <Preference
+            android:key="@string/pref_key_view_all_logs"
+            android:title="@string/pref_title_view_all_logs"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_key_sync"
+        android:title="@string/pref_title_sync">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_auto_sync_logs"
+            android:title="@string/pref_title_auto_sync_logs" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_key_user"
+        android:title="@string/pref_title_user">
+
+        <Preference
+            android:key="@string/pref_key_view_logs"
+            android:title="@string/pref_title_view_logs"/>
+    </PreferenceCategory>
+</PreferenceScreen>

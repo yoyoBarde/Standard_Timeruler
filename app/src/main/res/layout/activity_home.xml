@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_login"
+    tools:context="com.geniihut.payrulerattendance.home.HomeActivity">
+
+
+<TextView
+    android:id="@+id/offlineTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:background="@color/red"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:text="@string/offline_mode"
+    android:visibility="invisible"
+    android:animateLayoutChanges="true"
+    />
+
+    <!--<include-->
+    <!--android:id="@+id/app_bar"-->
+    <!--layout="@layout/app_bar" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/frame_content_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/app_bar" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fadeScrollbars="false"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/default_margin"-->
+            <!--android:text="@string/date_default"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/default_margin"-->
+            <!--android:text="@string/time_default"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="36sp" />-->
+            <include
+                layout="@layout/view_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/default_margin" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCoordinates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lat"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvLat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_drawable_padding"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/longi"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvLong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_drawable_padding"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/edittext_custom_box"
+                    android:gravity="center"
+                    android:hint="@string/username"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textAutoComplete"
+                    android:minHeight="@dimen/default_medium_row_size"
+                    android:singleLine="true" />
+
+                <requestFocus />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_drawable_padding"
+                    android:background="@drawable/edittext_custom_box"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:minHeight="@dimen/default_medium_row_size"
+                    android:singleLine="true" />
+
+                <requestFocus />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_medium_row_size"
+                    android:layout_marginTop="@dimen/default_margin"
+                    card_view:cardBackgroundColor="@color/green"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/cardview_textSize" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/llButtonsInOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btnIn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/default_medium_row_size"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        card_view:cardBackgroundColor="@color/time_in_btn_in"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="1dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/in"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/cardview_textSize" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btnOut"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/default_medium_row_size"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        card_view:cardBackgroundColor="@color/time_in_btn_out"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="1dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/out"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/cardview_textSize" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/default_drawable_padding"
+        android:src="@drawable/ic_settings" />
+</RelativeLayout>

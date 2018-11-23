@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/table_cell_one"
+    android:divider="?android:attr/dividerHorizontal">
+    <!--android:showDividers="middle"-->
+    <TextView
+        android:id="@+id/tvCell1"
+        style="@style/TableCellOneStyle"
+        android:layout_weight="@integer/lv_timein_column1"
+        android:text="item1" />
+
+    <TextView
+        android:id="@+id/tvCell2"
+        style="@style/TableCellOneStyle"
+        android:layout_weight="@integer/lv_timein_column2"
+        android:text="item2" />
+
+</TableRow>

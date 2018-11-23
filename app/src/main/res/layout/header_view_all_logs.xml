@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="@color/view_all_logs_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/default_drawable_padding">
+
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textColor="@color/view_all_logs_title"
+        android:textSize="@dimen/view_all_logs_text_title" />
+
+
+</LinearLayout>
